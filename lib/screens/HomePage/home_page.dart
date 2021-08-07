@@ -5,6 +5,7 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
@@ -12,7 +13,7 @@ class Homepage extends StatelessWidget {
         backgroundColor: Colors.cyan,
       ),
       body: Home(),
-
+/*
       //metodo para criar o botão de entrada do maps
       floatingActionButton: FloatingActionButton(
         onPressed: () => showDialog<String>(
@@ -34,7 +35,7 @@ class Homepage extends StatelessWidget {
         ),
         child: const Icon(Icons.location_on),
         backgroundColor: Colors.cyan,
-      ),
+      ),*/
     );
   }
 }

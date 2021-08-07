@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//cartões criados para dashboard
 
 class CardsMenu extends StatelessWidget {
   final String title;
@@ -39,7 +40,7 @@ class CardsMenu extends StatelessWidget {
                       alignment: Alignment.center,
                       child: _value(value))
                 ]),
-            SizedBox(height: 14),
+            const SizedBox(height: 14),
             Text(title,
                 style: TextStyle(
                     fontSize: 15,
@@ -53,11 +54,9 @@ class CardsMenu extends StatelessWidget {
 }
 
 Widget _value(String value) {
-  return Container(
-    child: Text(value,
-        style: TextStyle(
-            fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold)),
-  );
+  return Text(value,
+      style: TextStyle(
+          fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold));
 }
 
 Widget _icon(Color color, IconData icon) {
